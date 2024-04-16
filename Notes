@@ -1,0 +1,144 @@
+Introduction :
+
+    Typescript is superset of javascript [A language that building up on javascript ]
+    It is a programming lang and also the tool for compiling the code ie (tsc-typescript compiler)
+    TypeScript is an open-source, object-oriented programing language, which is developed and maintained by Microsoft under the Apache 2 license. It was introduced by Anders Hejlsberg, a core member of the development team of C# language.
+    Typescript = advatages of javascript + adding new features
+    Typescript can't  execute the code directly on browsers is one of the disadvantage
+
+Execution process of Typescript :
+
+                      +------------------------------------+
+                      |                                    |
+                      |          TypeScript Code           |
+                      |     Here we write the code                                     |
+                      +---------------------+--------------+
+                                            |
+                                            v
+                      +---------------------+--------------+
+                      |                                    |
+                      |         Compilation                |
+                      |                                    |
+                      +---------------------+--------------+
+                      |  When we were ready to run our     |
+                      |TypeScript code,it use a TypeScript | 
+                      |compiler(usually tsc,the TypeScript |
+                      |Compiler)compile TypeScript files   |
+                      | (.ts or .tsx extensions) into      |
+                      |JavaScript files (.js extension)    |                               |
+                      |   Converts TypeScript code         |
+                      |   into equivalent JavaScript       |
+                      |   code based on ECMAScript         |
+                      |   standard                         |
+                      |                                    |
+                      +---------------------+--------------+
+                                            |
+                                            v
+                      +---------------------+--------------+
+                      |                                    |
+                      |        Type Checking                |
+                      |                                    |
+                      +---------------------+--------------+
+                      |                                    |
+                      |   Static analysis of TypeScript    |
+                      |   code to find type errors and     |
+                      |   ensure type safety and           |
+                      |   correctness                      |
+                      |                                    |
+                      +---------------------+--------------+
+                                            |
+                                            v
+                      +---------------------+--------------+
+                      |                                    |
+                      |      Output JavaScript             |
+                      |                                    |
+                      +---------------------+--------------+
+                      |                                    |
+                      |   Generates JavaScript code       |
+                      |   without TypeScript-specific     |
+                      |   constructs (e.g., type          |
+                      |   annotations)                     |
+                      |                                    |
+                      +---------------------+--------------+
+                                            |
+                                            v
+                      +---------------------+--------------+
+                      |                                    |
+                      |       Run JavaScript               |
+                      |                                    |
+                      +---------------------+--------------+
+                      |                                    |
+                      |   Executes the generated           |
+                      |   JavaScript code in a runtime     |
+                      |   environment (e.g., browser,      |
+                      |   Node.js)                         |
+                      |                                    |
+                      +---------------------+--------------+
+                                            |
+                                            v
+                      +---------------------+--------------+
+                      |                                    |
+                      |          Result                    |
+                      |                                    |
+                      +------------------------------------+
+____________________________________________________________________________________________________________
+
+Here's a comparison between a Static Type Checker and a Dynamic Type Checker, along with examples programmed in TypeScript and Python respectively:
+
+Static Type Checker :
+
+Definition: A static type checker analyzes the types of variables and expressions in code before it's executed.
+Type Annotations: Requires explicit type annotations in the code.
+Error Detection: Detects type errors before the code is executed.
+Compilation: Type errors must be resolved before the code can be compiled.
+
+Example in TypeScript:
+function add(x: number, y: number): number {
+    return x + y;
+}
+
+const result = add(5, "hello"); // Type error: "hello" is not a number
+console.log(result);
+
+In this TypeScript example, the static type checker detects a type error at compile time because the function add expects two parameters of type number, but "hello" (a string) is passed as the second argument.
+
+Dynamic Type Checker:
+
+Definition: A dynamic type checker analyzes types at runtime, while the code is being executed.
+Type Annotations: May or may not require explicit type annotations in the code.
+Error Detection: May not detect type errors until the code is executed.
+Compilation: Code can be compiled regardless of potential type errors.
+
+Example in Python:    
+def add(x, y):
+    return x + y
+
+result = add(5, "hello")  # No type error detected during compilation
+print(result)
+
+In this Python example, there are no explicit type annotations, and the type of x and y is determined dynamically based on the values passed during execution. The type error (adding a number to a string) is not detected until the code is executed, resulting in potential runtime errors.
+
+In summary, a static type checker performs type checking at compile time, requiring explicit type annotations and detecting type errors before execution, while a dynamic type checker performs type checking at runtime, allowing more flexibility with type annotations but potentially delaying error detection until execution.
+---------------------------------------------------------------------------------------------------------------
+Why do we need TypeScript when we have JavaScript?
+
+JavaScript, initially designed as a client-side language, expanded to server-side use. However, its growing complexity and limitations in Object-Oriented Programming hindered its enterprise adoption. To address this, TypeScript was created to enhance JavaScript, providing static typing and features for robust enterprise-level server-side development. 
+
+Advantages of using TypeScript over JavaScript :
+
+>TypeScript always points out the compilation errors at the time of development (pre-compilation). Because of this getting runtime errors is less likely, whereas JavaScript is an interpreted language.
+>TypeScript supports static/strong typing. This means that type correctness can be checked at compile time. This feature is not available in JavaScript.
+>TypeScript is nothing but JavaScript and some additional features i.e. ES6 features. It may not be supported in your target browser but the TypeScript compiler can compile the .ts files into ES3, ES4, and ES5 also.
+ 
+Disadvantages of using TypeScript over JavaScript :
+
+>Generally, TypeScript takes time to compile the code.
+>TypeScript does not support abstract classes.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+TypescriptVSJavascript                                                                                                                           ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+TypeScript	:                                    | JavaScript :                                            
+Provides static typing	                         | Dynamically typed
+Comes with IDEs and code editors 	             | Limited built-in tooling
+Similar to JavaScript, with additional features  | Standard JavaScript syntax
+Backward compatible with JavaScript 	         | Cannot run TypeScript in JavaScript files
+Stronger typing can help identify errors 	     | May require more debugging and testing
