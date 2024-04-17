@@ -87,7 +87,8 @@ Here's a comparison between a Static Type Checker and a Dynamic Type Checker, al
 
 Static Type Checker :
 
-Definition: A static type checker analyzes the types of variables and expressions in code before it's executed.
+Definition:
+A static type checker analyzes the types of variables and expressions in code before it's executed.
 Type Annotations: Requires explicit type annotations in the code.
 Error Detection: Detects type errors before the code is executed.
 Compilation: Type errors must be resolved before the code can be compiled.
@@ -104,7 +105,8 @@ In this TypeScript example, the static type checker detects a type error at comp
 
 Dynamic Type Checker:
 
-Definition: A dynamic type checker analyzes types at runtime, while the code is being executed.
+Definition:
+A dynamic type checker analyzes types at runtime, while the code is being executed.
 Type Annotations: May or may not require explicit type annotations in the code.
 Error Detection: May not detect type errors until the code is executed.
 Compilation: Code can be compiled regardless of potential type errors.
@@ -146,11 +148,29 @@ ________________________________________________________________________________
 Install TypeScript globally:
 npm install -g typescript - It installs the typescript globally 
 
- check whether installed or not :
+check whether installed or not :
 tsc --version - it give the version of typescript that installed in the system
 
 Compilation :
-tsc hello.ts - this will convert the typescript code into javascript by help tsc compiler and one file of javascript of same ts code is generated in the same directory 
+tsc hello.ts - this will convert the typescript code into javascript by help tsc compiler and one file of javascript of same ts code is generated in the same directory
+
 execution : node hello.js - the generated javascript file is executed and gives the ouput in the console
+__________________________________________________________________________________________________________________________
+variables :
+variables are declared using let, const, or var keywords
+1. let Keyword:
 
+Declares a block-scoped local variable.
+Can be reassigned within its scope.
+2. const Keyword:
 
+Declares a block-scoped read-only variable.
+Cannot be reassigned once initialized.
+3. var Keyword:
+
+Declares a variable globally, or locally to an entire function regardless of block scope.
+Can be reassigned and redeclared within its scope.
+
+Note:
+ var has some quirks and is generally avoided in modern TypeScript development in favor of let and const.
+_________________________________________________________________________________________________________________________
