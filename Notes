@@ -174,3 +174,23 @@ Can be reassigned and redeclared within its scope.
 Note:
  var has some quirks and is generally avoided in modern TypeScript development in favor of let and const.
 _________________________________________________________________________________________________________________________
+DataTypes :
+1. number: 
+Represents numeric values, including integers and floating-point numbers
+2. string: 
+Represents textual data, enclosed within single quotes (') or double quotes (").
+3. boolean:
+ Represents a logical value, either true or false.
+4. array:
+ Represents a collection of elements of the same type. Arrays can be declared using square brackets ([]) with optional type annotation.
+5. tuple:
+ Represents an array with a fixed number of elements where each element may have a different type. Tuples are declared using square brackets ([]) with specific types for each element.
+6. enum:
+ Represents a set of named constants. Enums are useful for defining a fixed set of values.
+7. any: 
+Represents a dynamic or untyped value. Use of any allows you to opt out of type checking and enables operations that might result in runtime errors.
+8. void: 
+Represents the absence of a value. Typically used as the return type of functions that do not return a value.
+9. null and undefined: 
+Represents the absence of a value. They can be assigned to variables of any type.
+__________________________________________________________________________________________________________________________
