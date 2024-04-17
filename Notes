@@ -142,3 +142,15 @@ Comes with IDEs and code editors 	             | Limited built-in tooling
 Similar to JavaScript, with additional features  | Standard JavaScript syntax
 Backward compatible with JavaScript 	         | Cannot run TypeScript in JavaScript files
 Stronger typing can help identify errors 	     | May require more debugging and testing
+__________________________________________________________________________________________________________________________
+Install TypeScript globally:
+npm install -g typescript - It installs the typescript globally 
+
+ check whether installed or not :
+tsc --version - it give the version of typescript that installed in the system
+
+Compilation :
+tsc hello.ts - this will convert the typescript code into javascript by help tsc compiler and one file of javascript of same ts code is generated in the same directory 
+execution : node hello.js - the generated javascript file is executed and gives the ouput in the console
+
+
