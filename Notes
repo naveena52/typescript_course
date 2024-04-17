@@ -212,3 +212,6 @@ Anonymous functions are often used as arguments to other functions or assigned t
 An arrow function in TypeScript is a concise way to define a function using the  `=>` syntax. 
 It's also known as a fat arrow function. 
 Arrow functions have a shorter syntax compared to traditional function expressions and automatically capture the this value from the enclosing lexical context.
+-------------------------------------------------------------------------------------------------
+Interface :
+Interfaces are used to define the structure of objects in TypeScript. They describe the properties and methods that an object should have.
