@@ -194,3 +194,21 @@ Represents the absence of a value. Typically used as the return type of function
 9. null and undefined: 
 Represents the absence of a value. They can be assigned to variables of any type.
 __________________________________________________________________________________________________________________________
+Functions :
+Functions are the fundamental building blocks of any application. 
+TypeScript allows to define functions with static typing for parameters and return values.
+
+1.Named Function :
+A named function in TypeScript is a function that has a name identifier. 
+It can be defined using the function keyword followed by the function name. 
+Named functions are often used when the same function may be called multiple times within the same scope or when the function needs to refer to itself recursively
+
+2.Anonymous Function :
+An anonymous function in TypeScript is a function that does not have a name.
+It can be defined using the function keyword without specifying a name. 
+Anonymous functions are often used as arguments to other functions or assigned to variables. 
+
+3.Arrow Function :
+An arrow function in TypeScript is a concise way to define a function using the  `=>` syntax. 
+It's also known as a fat arrow function. 
+Arrow functions have a shorter syntax compared to traditional function expressions and automatically capture the this value from the enclosing lexical context.
